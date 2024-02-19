@@ -50,3 +50,10 @@ document.querySelector(".input-bottom.color").addEventListener("click", () => {
     input.value = "";
   });
 });
+document.querySelector(".input-bottom.color").addEventListener("click", () => {
+  document.querySelectorAll(".input-bottom").forEach((input) => {
+    if (input.type !== "button") {
+      input.value = "";
+    }
+  });
+});
